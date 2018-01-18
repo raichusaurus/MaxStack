@@ -48,6 +48,14 @@ public class MaxStackTest {
             testStack.push(i);
         }
         assertEquals(testStack.getMax(), (Integer) 4);
+        testStack.pop();
+        assertEquals(testStack.getMax(), (Integer) 3);
+        testStack.push(5);
+        assertEquals(testStack.getMax(), (Integer) 5);
+        testStack.push(2);
+        assertEquals(testStack.getMax(), (Integer) 5);
+        testStack.pop();
+        assertEquals(testStack.getMax(), (Integer) 5);
     }
 
     // make sure correct max is returned with items inserted in descending order
@@ -59,5 +67,9 @@ public class MaxStackTest {
             testStack.push(i);
         }
         assertEquals(testStack.getMax(), (Integer) 4);
+        testStack.pop();
+        assertEquals(testStack.getMax(), (Integer) 4);
+        testStack.push(5);
+        assertEquals(testStack.getMax(), (Integer) 5);
     }
 }
