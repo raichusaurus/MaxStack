@@ -4,8 +4,10 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
+// Create unit tests to make sure refactoring goes smoothly
 public class MaxStackTest {
 
+    // make sure stack is implemented correctly forward
     @Test
     public void testPushPeekPopForward() {
 
@@ -21,6 +23,7 @@ public class MaxStackTest {
         }
     }
 
+    // make sure stack is implemented correctly backward
     @Test
     public void testPushPeekPopBackward() {
 
@@ -36,6 +39,7 @@ public class MaxStackTest {
         }
     }
 
+    // make sure correct max is returned with items inserted in ascending order
     @Test
     public void testMaxForward() {
 
@@ -46,6 +50,7 @@ public class MaxStackTest {
         assertEquals(testStack.getMax(), (Integer) 4);
     }
 
+    // make sure correct max is returned with items inserted in descending order
     @Test
     public void testMaxBackWard() {
 
