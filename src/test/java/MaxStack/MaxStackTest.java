@@ -58,6 +58,6 @@ public class MaxStackTest {
         for (int i = 4; i > -1; i--) {
             testStack.push(i);
         }
-        assertEquals(testStack.getMax(), (Integer) 3);
+        assertEquals(testStack.getMax(), (Integer) 4);
     }
 }
